@@ -1,6 +1,6 @@
 package db
 
-import "metrics/entity"
+import "github.com/sneiko/go-metrics/entity"
 
 var InMemoryDb = make([]*entity.MonitorRow, 0, 100)
 

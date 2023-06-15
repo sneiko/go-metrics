@@ -6,7 +6,7 @@ import (
 	"log"
 	"net/http"
 
-	"metrics/entity"
+	"github.com/sneiko/go-metrics/entity"
 )
 
 type Options struct {

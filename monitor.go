@@ -1,8 +1,8 @@
 package metrics
 
 import (
-	"metrics/db"
-	"metrics/entity"
+	"github.com/sneiko/go-metrics/db"
+	"github.com/sneiko/go-metrics/entity"
 )
 
 func AddToMonitor(sql string, params any) *entity.MonitorRow {

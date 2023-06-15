@@ -3,7 +3,7 @@ Simple pkg for monitoring estimation of SQL queries
 
 # Install
 ```
-go get github.com/sneiko/go-metrics
+go get github.com/sneiko/go-metrics@v0.0.3
 ```
 
 # Usage:

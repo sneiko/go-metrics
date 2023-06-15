@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>SQL Monitor</title>
+  </head>
+  <body>
+    <h2>Last pack of queries</h2>
+
+    <table>
+      {{range list}}
+      <tr>
+        <td>{{.SQL}}</td>
+        <td>{{.Params}}</td>
+        <td>{{.Duration}} ms</td>
+      </tr>
+      {{end}}
+    </table>
+  </body>
+</html>

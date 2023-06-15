@@ -16,20 +16,6 @@ type Options struct {
 }
 
 func RunServer(opt Options) {
-
-	go EstimateQuery("SELECT * FROM users WHERE id = ?", 1, func() {
-		time.Sleep(1 * time.Second)
-	})
-	go EstimateQuery("SELECT * FROM users WHERE id = ?", 1, func() {
-		time.Sleep(4 * time.Second)
-	})
-	go EstimateQuery("SELECT * FROM users WHERE id = ?", 1, func() {
-		time.Sleep(2 * time.Second)
-	})
-	go EstimateQuery("SELECT * FROM users WHERE id = ?", 1, func() {
-		time.Sleep(10 * time.Second)
-	})
-
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		tmplt := template.New("index")
 		tmplt, err := tmplt.Parse(`

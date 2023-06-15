@@ -1,6 +1,11 @@
 # go-metrics
 Simple pkg for monitoring estimation of SQL queries 
 
+# Install
+```
+go get github.com/sneiko/go-metrics
+```
+
 # Usage:
 ## Init 
 ```

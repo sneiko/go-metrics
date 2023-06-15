@@ -1,6 +1,6 @@
 package db
 
-import "metrics/internal/entity"
+import "metrics/entity"
 
 var InMemoryDb = make([]*entity.MonitorRow, 0, 100)
 

@@ -1,8 +1,8 @@
 package metrics
 
 import (
-	"metrics/internal/db"
-	"metrics/internal/entity"
+	"metrics/db"
+	"metrics/entity"
 )
 
 func AddToMonitor(sql string, params any) *entity.MonitorRow {

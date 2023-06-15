@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"metrics/internal/entity"
+	"metrics/entity"
 )
 
 type Options struct {
